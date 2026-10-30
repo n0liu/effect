@@ -1,5 +1,14 @@
 # @effect/experimental
 
+## 0.61.3
+
+### Patch Changes
+
+- [#10183](https://github.com/Effect-TS/effect/pull/10183) [`be0ab4c`](https://github.com/Effect-TS/effect/commit/be0ab4cf695e62640e9d2011842a035d284106a8) Thanks @effect-bot! - `Sse.encoder` now removes CR and LF from event `id` and `event` values, and NUL from `id` values, so they cannot add fields or events to the encoded stream. CR and CRLF in `data` are now split into separate `data:` lines, like LF.
+
+- Updated dependencies [[`c4b7934`](https://github.com/Effect-TS/effect/commit/c4b7934093807e5742e13dada2adf3691bd98e63)]:
+  - effect@3.22.5
+
 ## 0.61.2
 
 ### Patch Changes
